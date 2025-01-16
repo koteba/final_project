@@ -1,0 +1,212 @@
+/* قسم الاتصال */
+.contact-section {
+    padding: 3rem 10%;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* تنسيق الوضع الداكن */
+body.dark-mode .contact-section {
+    background-color: #1B2431;
+    color: #fff;
+}
+
+.contact-header {
+    text-align: left;
+    margin-bottom: 2rem;
+    transition: color 0.3s ease;
+}
+
+body.dark-mode .contact-header {
+    color: #fff;
+}
+
+.contact-header h2 {
+    font-size: 2rem;
+    line-height: 1.5;
+    margin: 0;
+    color: #333;
+}
+
+body.dark-mode .contact-header h2 {
+    color: #fff;
+}
+
+.contact-header h2 span {
+    color: #007bff;
+}
+
+body.dark-mode .contact-header h2 span {
+    color: #55aaff;
+}
+
+/* محتوى الاتصال */
+.contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+/* معلومات الاتصال */
+.contact-info {
+    flex: 1;
+    max-width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+body.dark-mode .info-item {
+    background-color: #1B2431;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.info-item .icon {
+    font-size: 1.8rem;
+    width: 61.85px;
+    height: 61.85px;
+    background-color: #0C96E2;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.info-item .icon:hover {
+    background-color: #0073e6;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.info-item .info-text h4 {
+    font-size: 1.2rem;
+    color: #1B2431;
+    margin-bottom: 0.2rem;
+}
+
+body.dark-mode .info-item .info-text h4 {
+    color: #fff;
+}
+
+.info-item .info-text p {
+    color: #1B2431;
+    font-size: 1rem;
+}
+
+body.dark-mode .info-item .info-text p {
+    color: #ccc;
+}
+
+/* نموذج الاتصال */
+.contact-form {
+    flex: 2;
+    max-width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+body.dark-mode .contact-form {
+    background-color: #1B2431;
+    color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #BEC0BF;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+}
+
+body.dark-mode .contact-form input,
+body.dark-mode .contact-form textarea {
+    background-color: #1B2431;
+    border: 1px solid #555;
+    color: #fff;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+/* زر الإرسال */
+.btn-submit {
+    padding: 0.8rem 2rem;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 200px;
+    text-align: center;
+    display: inline-block;
+}
+
+body.dark-mode .btn-submit {
+    background-color: #3a73cc;
+}
+
+body.dark-mode .btn-submit:hover {
+    background-color: #4c8de3;
+}
+
+body.dark-mode .btn-submit:active {
+    background-color: #1B2431;
+}
+
+body.dark-mode .btn-submit:disabled {
+    background-color: #1B2431;
+    color: #1B2431;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+h4 {
+    text-align: left;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+h4 .blue-text {
+    color: #007bff;
+}
+
+.contact-header {
+    text-align: left;
+}
+
+.contact-header h2 {
+    font-size: 2rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.contact-header h2 span {
+    color: #007bff;
+}

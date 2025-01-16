@@ -1,0 +1,61 @@
+/* الفوتر */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 10%;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    font-size: 1rem;
+    color: #555;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* تنسيق الوضع الداكن */
+body.dark-mode .footer {
+    background-color: #1B2431;
+    color: #fff;
+    border-top: 1px solid #BEC0BF;
+}
+
+/* القسم الأيسر */
+.footer-left {
+    flex: 1;
+    text-align: left;
+}
+
+/* القسم الأوسط */
+.footer-center {
+    flex: 1;
+    text-align: center;
+}
+
+/* القسم الأيمن */
+.footer-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+/* أيقونات وسائل التواصل */
+.social-icon {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #007bff;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode .social-icon {
+    color: #55aaff;
+    
+}
+
+.social-icon:hover {
+    color: #0056b3;
+    transform: scale(1.2);
+}
+
+body.dark-mode .social-icon:hover {
+    color: #80bfff;
+}

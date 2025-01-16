@@ -1,0 +1,96 @@
+/* الوضع العادي (Light Mode) */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.nav-links a.active {
+    color: #007bff;
+}
+
+.theme-toggle {
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+/* الوضع الداكن (Dark Mode) */
+body.dark-mode .navbar {
+    background-color: #1B2431;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .navbar .logo {
+    color: #fff;
+}
+
+body.dark-mode .nav-links a {
+    color: #fff;
+}
+
+body.dark-mode .nav-links a.active {
+    color: #00bcd4;
+}
+
+body.dark-mode .theme-toggle {
+    color: #fff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #1B2431;
+    font-weight: 500;
+}
+
+.nav-links a.active {
+    color: #0C96E2;
+}
+
+.theme-toggle {
+    cursor: pointer;
+    font-size: 1.2rem;
+}

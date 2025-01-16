@@ -1,0 +1,135 @@
+/* الوضع الافتراضي (لايت) */
+.about-me {
+    background: #fff;
+    border-top: 2px dashed #ddd;
+}
+
+.about-content h2 {
+    color: #333;
+}
+
+.about-content p {
+    color: #555;
+}
+
+.progress {
+    background: #f0f0f0;
+}
+
+.progress-bar {
+    background: #007bff;
+}
+
+.percentage {
+    color: #1D2130;
+}
+
+/* الوضع الداكن */
+body.dark-mode .about-me {
+    background: #1B2431;
+    /* لون داكن */
+    border-top: 2px dashed #3a3a3a;
+    /* لون الحدود الداكن */
+}
+
+body.dark-mode .about-content h2 {
+    color: #fff;
+}
+
+body.dark-mode .about-content p {
+    color: #FFFFFF;
+}
+
+body.dark-mode .progress {
+    background: #FFFFFF;
+}
+
+body.dark-mode .progress-bar {
+    background: #0C96E2;
+    /* لون مختلف لشريط التقدم */
+}
+
+body.dark-mode .percentage {
+    color: #fff;
+}
+
+.about-me {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2rem 10%;
+    background: #fff;
+    /* margin-top: 2rem; */
+    border-top: 2px dashed #ddd;
+}
+
+.about-content {
+    max-width: 50%;
+}
+
+.about-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #1D2130;
+}
+
+.about-content p {
+    margin-bottom: 1.5rem;
+    color: #1D2130;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.skill span {
+    flex: 1;
+    font-weight: bold;
+}
+
+.progress {
+    flex: 3;
+    background: #f0f0f0;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 10px;
+    position: relative;
+}
+
+.progress-bar {
+    background: #007bff;
+    height: 100%;
+    transition: width 0.3s;
+}
+
+.percentage {
+    flex: 1;
+    text-align: right;
+    font-size: 0.9rem;
+}
+
+.about-icons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    max-width: 40%;
+    justify-items: center;
+}
+
+.about-icons img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s;
+}
+
+.about-icons img:hover {
+    transform: scale(1.1);
+}

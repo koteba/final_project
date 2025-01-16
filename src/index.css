@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: linear-gradient(to bottom right, #f5f7fa, #dcecfb);
+  color: #333;
+}
+
+html {
+  scroll-behavior: smooth;
+}

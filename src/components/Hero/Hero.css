@@ -1,0 +1,100 @@
+/* الوضع العادي (Light Mode) */
+.hero{
+    background-color: #FFFFFF;
+}
+.hero-section {
+    /* background-image: url('../../assets/image/Lines.svg'); */
+    background-repeat: no-repeat;
+    background-position: center calc(100% - 40px);
+    /* رفع الصورة 40px للأعلى */
+    display: flex;
+    align-items: center;
+    background-color: #FFFFFF;
+    justify-content: space-between;
+    padding: 2rem 10%;
+}
+
+.hero-section .content {
+    max-width: 50%;
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-section h1 span {
+    color: #007bff;
+}
+
+.hero-section p {
+    margin-bottom: 1.5rem;
+    color: #555;
+}
+
+.btn {
+    padding: 0.75rem 1.5rem;
+    background-color: #0C96E2;
+    color: #1D2130;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    /* background-color: #0056b3; */
+}
+
+.hero-image {
+    max-width: 40%;
+}
+
+.hero-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* الوضع الداكن (Dark Mode) */
+body.dark-mode .hero-section {
+    /* background-image: url('../../assets/image/Lines.svg'); */
+    /* يمكن تغيير الصورة هنا */
+    background-position: center calc(100% - 40px);
+    background-color: #1B2431;
+}
+
+body.dark-mode .hero-section .content {
+    max-width: 50%;
+}
+
+body.dark-mode .hero-section h1 {
+    color: #fff;
+    /* تغيير لون النص في الـ h1 */
+}
+
+body.dark-mode .hero-section h1 span {
+    color: #00bcd4;
+    /* تغيير لون الـ span */
+}
+
+body.dark-mode .hero-section p {
+    color: #bbb;
+    /* تغيير لون الفقرة في الوضع الداكن */
+}
+
+body.dark-mode .btn {
+    background-color: #0C96E299;
+    /* تغيير لون الخلفية في الوضع الداكن */
+    color: #fff;
+    /* لون النص */
+}
+
+body.dark-mode .btn:hover {
+    background-color: #555;
+    /* لون الخلفية عند التمرير على الزر */
+}
+
+body.dark-mode .hero-image img {
+    border-radius: 10px;
+    filter: brightness(0.7);
+    /* تقليل السطوع في الوضع الداكن */
+}
