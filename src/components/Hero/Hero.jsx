@@ -1,5 +1,5 @@
 import NavBar from '../NavBar/NavBar'
-import lauraPhoto from '../../assets/image/image.png';
+import lauraPhoto from '../../assets/image/43534.png';
 import cv from '../../assets/pdf/KOTAIBA   ALALI.pdf';
 import './Hero.css'
 import { hero } from '../../data.js';

@@ -1,0 +1,99 @@
+/* الوضع الافتراضي (لايت) */
+.project-details-container {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    align-items: center;
+    background-color: #fff;
+    /* خلفية بيضاء */
+    color: #333;
+    /* نص أسود */
+}
+
+.project-details-image img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.project-details-info {
+    flex: 1;
+}
+
+.project-details-info h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #333;
+    /* النص باللون الأسود */
+}
+
+.project-details-info p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #555;
+    /* نص أغمق قليلاً */
+}
+
+.project-details-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.project-details-link:hover {
+    color: #0056b3;
+}
+
+/* الوضع الداكن (دارك مود) */
+body.dark-mode .project-details-container {
+    background-color: #1B2431;
+    /* خلفية داكنة */
+    color: #fff;
+    /* نص أبيض */
+}
+
+body.dark-mode .project-details-info h2,
+body.dark-mode .project-details-info p {
+    color: #fff;
+    /* نص أبيض في الوضع المظلم */
+}
+
+body.dark-mode .project-details-link {
+    color: #66afe9;
+    /* لون أزرق فاتح */
+}
+
+body.dark-mode .project-details-link:hover {
+    color: #4a8fc2;
+    /* لون أزرق داكن عند التمرير */
+}
+
+
+@media (max-width: 768px) {
+    .project-details-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .project-details-image img {
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 1rem;
+    }
+
+    .project-details-info {
+        text-align: center;
+    }
+
+    .project-details-info h2 {
+        font-size: 1.8rem;
+    }
+
+    .project-details-info p {
+        font-size: 1rem;
+    }
+}

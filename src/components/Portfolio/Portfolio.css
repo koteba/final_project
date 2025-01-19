@@ -86,9 +86,12 @@ body.dark-mode .portfolio-section {
 }
 
 .project-info a {
-    display: flex; /* استخدام flexbox لمركزة النص */
-    justify-content: center; /* مركز المحاذاة أفقياً */
-    align-items: center; /* مركز المحاذاة عمودياً */
+    display: flex;
+    /* استخدام flexbox لمركزة النص */
+    justify-content: center;
+    /* مركز المحاذاة أفقياً */
+    align-items: center;
+    /* مركز المحاذاة عمودياً */
     margin-left: 60px;
     color: #0C96E2;
     font-size: 4rem;
@@ -98,7 +101,6 @@ body.dark-mode .portfolio-section {
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-
 
 .refresh-icon:hover {
     /* background-color: #0056b3; */
@@ -140,6 +142,37 @@ body.dark-mode .github-link {
     background-color: #0C96E2;
 }
 
-/* body.dark-mode .github-link:hover {
-    background-color: #555;
-} */
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .portfolio-header h2 {
+        font-size: 2rem;
+    }
+
+    .portfolio-header h3 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+        margin-top: 50px;
+    }
+
+    .portfolio-header h2 {
+        font-size: 1.8rem;
+    }
+
+    .portfolio-header h3 {
+        font-size: 1.3rem;
+    }
+
+    .github-link {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.9rem;
+    }
+}

@@ -209,6 +209,7 @@ body.dark-mode .timeline-item::before {
 }
 
 /* استجابة للشاشات الصغيرة */
+/* استجابة للشاشات الصغيرة */
 @media (max-width: 768px) {
 
     .education_first,
@@ -220,12 +221,21 @@ body.dark-mode .timeline-item::before {
     .image-content {
         position: static;
         width: 80%;
+        /* تصغير حجم الصورة إلى 80% على الشاشات الصغيرة */
         margin: 0 auto;
+        max-width: 100%;
+        /* التأكد من أن الصورة لا تتجاوز عرض الشاشة */
+        height: auto;
     }
 
     .img_left .background-image {
-        width: 70%;
+        width: 50%;
+        /* تصغير عرض الصورة الخلفية إلى 50% على الشاشات الصغيرة */
         margin: 0 auto 15px auto;
+        height: auto;
+        /* التأكد من أن الصورة تحافظ على النسب المناسبة */
+        transform: none;
+        /* إزالة التدوير عند الحجم الصغير */
     }
 
     .img_left .text-content {
@@ -238,5 +248,20 @@ body.dark-mode .timeline-item::before {
 
     .timeline-item {
         width: 100%;
+    }
+
+    .timeline-item::before {
+        left: 0;
+        /* تعديل الموضع ليناسب العناصر */
+    }
+
+    /* تعديل قياسات الصورة الخلفية في الأقسام */
+    .img_left {
+        width: 100%;
+        /* جعل القسم بالكامل في عرض 100% على الموبايل */
+        left: 0;
+        /* إعادة ضبط الموضع على الشاشات الصغيرة */
+        padding: 15px;
+        /* إضافة padding ليبدو مرتبًا أكثر */
     }
 }

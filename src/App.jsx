@@ -6,6 +6,7 @@ import Call from './components/Call/Call';
 import Portfolio from './components/Portfolio/Portfolio';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
+import ProjectDetail from './components/ProjectDetail/ProjectDetail';
 
 function App() {
   return (
@@ -17,17 +18,25 @@ function App() {
       <AboutMe />
       <Education />
       <Call />
-      <Portfolio />
-      <Contact />
       {/* Routes for different components */}
       <Routes>
-        <Route path="/33" element={<Hero />} />
+        
+        {/* <Route path="/33" element={<Hero />} /> */}
         <Route path="/about" element={<AboutMe />} />
+
         <Route path="/education" element={<Education />} />
         <Route path="/call" element={<Call />} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <Routes>
+        {/* صفحة تفاصيل المشروع تعرض فقط التفاصيل مع مكونات المشروع */}
+        <Route path="/ProjectDetail/:id" element={<ProjectDetail />} />
+      </Routes>
+      <Portfolio />
+
+      <Contact />
+
       {/* Footer appears on every page */}
       <Footer />
     </Router>

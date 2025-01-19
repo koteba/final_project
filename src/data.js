@@ -28,10 +28,7 @@ export const experiences = [
         location: "Hasaka, Syria",
         duration: "October 1, 2022 - Present",
         responsibilities: [
-            "Developed web applications using Laravel, prioritizing user experience and security.",
-            "Designed responsive user interfaces with Bootstrap and CSS, aligning with user needs.",
-            "Contributed to 6+ projects, including Warehouse Management, Contract Management, and License Management, focusing on workflow improvements and API integration.",
-            "Optimized application performance through code refactoring and database enhancements."
+            "Developed web applications with Laravel, focusing on user experience, security, and API integration across 6+ projects, including Warehouse, Contract, and License Management. Improved performance through code refactoring and database optimizations while designing responsive UIs with Bootstrap and CSS."
         ]
     },
     {
@@ -70,10 +67,10 @@ export const educationExperience = {
 
         {
             type: "Experience",
-            title: "Frontend Developer",
-            description: "Worked on various frontend projects, focusing on responsive design and seamless user experience."
+            title: "Full Stack Web Developer",
+            description: "Frontier Tech ...October 1, 2022 - Present  Developed web applications with Laravel, focusing on user experience, security, and API integration across 6+ projects, including Warehouse, Contract, and License Management. Improved performance through code refactoring and database optimizations while designing responsive UIs with Bootstrap and CSS."
         },
-        {
+            {
             type: "Education",
             title: "Master's Degree in Web Seience ",
             description: "Syrian Virtual University, Damascus, Syria — October 2022 to Present"
@@ -81,10 +78,8 @@ export const educationExperience = {
         {
             type: "Experience",
             title: "Frontend Developer",
-            description: "Worked on various frontend projects, focusing on responsive design and seamless user experience."
-        },
-
-        
+            description: "aratech September 1, 2021 - September 30, 2022\nDeveloped JavaScript projects (calculator, XO game, task list), learned Laravel for school, task, and blog management, and collaborated on 3+ team projects, including pharmacy, doctors, and warehouse management."
+        } ,
         {
             type: "Education",
             title: "Bachelor's Degree in Computer Science",

@@ -27,9 +27,7 @@
 /* الوضع الداكن */
 body.dark-mode .about-me {
     background: #1B2431;
-    /* لون داكن */
     border-top: 2px dashed #3a3a3a;
-    /* لون الحدود الداكن */
 }
 
 body.dark-mode .about-content h2 {
@@ -46,7 +44,6 @@ body.dark-mode .progress {
 
 body.dark-mode .progress-bar {
     background: #0C96E2;
-    /* لون مختلف لشريط التقدم */
 }
 
 body.dark-mode .percentage {
@@ -59,7 +56,6 @@ body.dark-mode .percentage {
     align-items: flex-start;
     padding: 2rem 10%;
     background: #fff;
-    /* margin-top: 2rem; */
     border-top: 2px dashed #ddd;
 }
 
@@ -117,19 +113,68 @@ body.dark-mode .percentage {
 }
 
 .about-icons {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-    max-width: 40%;
-    justify-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 2rem;
 }
 
 .about-icons img {
-    width: 50px;
-    height: 50px;
-    transition: transform 0.3s;
+    width: 60px;
+    transition: transform 0.3s ease-in-out;
 }
 
 .about-icons img:hover {
-    transform: scale(1.1);
+    transform: scale(2.1);
+}
+
+/* استجابة للموبايل */
+@media (max-width: 768px) {
+    .about-me {
+        flex-direction: column;
+        align-items: center;
+        padding: 1.5rem 5%;
+    }
+
+    .about-content {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .about-content h2 {
+        font-size: 1.5rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .about-content p {
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+    }
+
+    .skills {
+        gap: 0.8rem;
+    }
+
+    .skill span {
+        font-size: 0.9rem;
+    }
+
+    .progress {
+        height: 8px;
+    }
+
+    .percentage {
+        font-size: 0.8rem;
+    }
+
+    .about-icons {
+        gap: 15px;
+    }
+
+    .about-icons img {
+        width: 40px;
+        height: auto;
+    }
 }

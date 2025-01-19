@@ -1,17 +1,17 @@
 /* الوضع العادي (Light Mode) */
-.hero{
+.hero {
     background-color: #FFFFFF;
 }
+
 .hero-section {
-    /* background-image: url('../../assets/image/Lines.svg'); */
     background-repeat: no-repeat;
     background-position: center calc(100% - 40px);
     /* رفع الصورة 40px للأعلى */
     display: flex;
     align-items: center;
-    background-color: #FFFFFF;
     justify-content: space-between;
     padding: 2rem 10%;
+    background-color: #FFFFFF;
 }
 
 .hero-section .content {
@@ -56,45 +56,97 @@
 
 /* الوضع الداكن (Dark Mode) */
 body.dark-mode .hero-section {
-    /* background-image: url('../../assets/image/Lines.svg'); */
-    /* يمكن تغيير الصورة هنا */
     background-position: center calc(100% - 40px);
     background-color: #1B2431;
 }
 
-body.dark-mode .hero-section .content {
-    max-width: 50%;
-}
-
 body.dark-mode .hero-section h1 {
     color: #fff;
-    /* تغيير لون النص في الـ h1 */
 }
 
 body.dark-mode .hero-section h1 span {
     color: #00bcd4;
-    /* تغيير لون الـ span */
 }
 
 body.dark-mode .hero-section p {
     color: #bbb;
-    /* تغيير لون الفقرة في الوضع الداكن */
 }
 
 body.dark-mode .btn {
     background-color: #0C96E299;
-    /* تغيير لون الخلفية في الوضع الداكن */
     color: #fff;
-    /* لون النص */
 }
 
 body.dark-mode .btn:hover {
     background-color: #555;
-    /* لون الخلفية عند التمرير على الزر */
 }
 
 body.dark-mode .hero-image img {
     border-radius: 10px;
     filter: brightness(0.7);
-    /* تقليل السطوع في الوضع الداكن */
+}
+
+/* استجابة الشاشات الصغيرة */
+@media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem 5%;
+    }
+
+    .hero-section .content {
+        max-width: 100%;
+        /* جعل المحتوى يأخذ العرض الكامل */
+        margin-bottom: 2rem;
+    }
+
+    .hero-section h1 {
+        font-size: 2rem;
+        /* تقليل حجم العنوان */
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+        /* تقليل حجم النص */
+    }
+
+    .btn {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        /* تصغير الزر */
+    }
+
+    .hero-image {
+        max-width: 80%;
+        /* تصغير الصورة لتناسب الموبايل */
+    }
+
+    .hero-image img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-section {
+        padding: 1.5rem 3%;
+    }
+
+    .hero-section h1 {
+        font-size: 1.8rem;
+        /* تصغير العنوان أكثر للشاشات الصغيرة جدًا */
+    }
+
+    .hero-section p {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+        padding: 0.5rem 0.8rem;
+    }
+
+    .hero-image {
+        max-width: 90%;
+        /* تكبير الصورة قليلًا لجعلها مناسبة */
+    }
 }

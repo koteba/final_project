@@ -27,6 +27,69 @@ body.dark-mode .call {
     overflow: hidden;
 }
 
+/* تعديل تجاوب قسم CTA */
+@media (max-width: 768px) {
+    .cta-section {
+        width: 100%;
+        /* جعل العرض 100% في الشاشات الصغيرة */
+        height: auto;
+        padding: 1rem;
+        /* تقليل padding لتوفير المساحة */
+        transform: none;
+        /* إزالة التدوير في الشاشات الصغيرة */
+    }
+
+    .cta-container {
+        width: 100%;
+        /* جعل العرض 100% */
+        height: auto;
+        top: 0;
+        padding: 2rem 1rem;
+        /* تقليل padding */
+        transform: none;
+        /* إزالة التدوير */
+    }
+
+    .cta-content {
+        display: flex;
+        flex-direction: column;
+        /* تغيير الاتجاه إلى عمودي */
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .cta-button {
+        padding: 0.8rem 2rem;
+        /* تقليل padding لجعل الزر أصغر */
+        font-size: 1rem;
+        /* تقليل حجم الخط */
+    }
+
+    .cta-text {
+        padding: 0 1rem;
+        /* تقليل padding */
+    }
+
+    .cta-content h2 {
+        font-size: 2rem;
+        /* تقليل حجم النص في العناوين */
+    }
+
+    .cta-content p {
+        font-size: 1rem;
+        /* تقليل حجم النص في الفقرات */
+    }
+
+    /* تغيير موقع زر العودة للأعلى في الشاشات الصغيرة */
+    .back-to-top {
+        top: 20px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+    }
+}
+
 .cta-container {
     position: relative;
     background: #583FBC;

@@ -210,3 +210,12 @@ h4 .blue-text {
 .contact-header h2 span {
     color: #007bff;
 }
+@media (max-width: 768px) {
+    .contact-info {
+        max-width: 100%;
+    }
+
+    .contact-form {
+        max-width: 100%;
+    }
+}

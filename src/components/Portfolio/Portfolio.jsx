@@ -5,7 +5,9 @@ import cal from '../../assets/image/project/cal.png';
 import calender from '../../assets/image/project/calender.png';
 import todo from '../../assets/image/project/todo.png';
 import weather from '../../assets/image/project/weather.png';
-import { BsArrowUpRightCircle } from "react-icons/bs"; 
+import { BsArrowUpRightCircle } from "react-icons/bs";
+import { Link } from "react-router-dom";
+
 const projects = [
     {
         id: 1,
@@ -74,7 +76,13 @@ const Portfolio = () => {
                     {projects.map((project) => (
                         <div className="portfolio-item" key={project.id}>
                             <div className="image-container">
-                                <img src={project.image} alt={project.title} className="project-image" />
+                                <Link target='_blank' to={`/ProjectDetail/${project.id}`}>
+                                    <img
+                                        src={project.image}
+                                        alt={project.title}
+                                        className="project-image"
+                                    />
+                                </Link>
                             </div>
                             <div className="project-info">
                                 <h4>{project.title}</h4>
